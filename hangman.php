@@ -2,27 +2,23 @@
 //
 //
 //-------------------------------------------------------
-//-- HANGMAN                                       --
+//-- HANGMAN                                           --
 //-- PHP GAME Por Valdir Coxev                         --
-//-- http://giovi.supereva.it                          --
-//-- PHP 4.2.0 compatible                              --
-//-- Images taken from ASP code written by             --
-//-- ASP101 http://www.asp101.com                      --
 //-------------------------------------------------------
 //
 //
 
-$file_parole = 'parole.txt';   //file that contains all the words
-$template = 'base.html';       //template file that will be parsed
+$file_parole = 'parole.txt';   //arquivo que contém todas as palavras
+$template = 'base.html';       //arquivo de modelo que será analisado
 
-//functions and variables
+//funções e variáveis
 $alfabeto = array ('A' => 'a','B' => 'b','C' => 'c','D' => 'd','E' => 'e',
  'F' => 'f','G' => 'g','H' => 'h','I' => 'i','J' => 'j','K' => 'k','L' => 'l',
  'M' => 'm','N' => 'n','O' => 'o','P' => 'p','Q' => 'q','R' => 'r','S' => 's',
  'T' => 't','U' => 'u','V' => 'v','W' => 'w','X' => 'x','Y' => 'y','Z' => 'z');
 session_start ();
 
-//choose a random word from the file
+//escolher uma palavra aleatória a partir do arquivo
 function ScegliParola ($file_parole) {
  $content = file ($file_parole);
  $numero_parole = (count ($content)-1);
