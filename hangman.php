@@ -131,10 +131,10 @@ if ($indovina!=$indovinata) {
  }
 }
 else {
- echo ("\n<p>Congratulations! You guessed the word.</p>\n");
+ echo ("\n<p>Parabéns! Você adivinhou a palavra.</p>\n");
 }
 
-print ('<p><a href="'.$_SERVER['PHP_SELF'].'">New Game</a></p>');
+print ('<p><a href="'.$_SERVER['PHP_SELF'].'">Iniciar Jogo</a></p>');
 $i++;
 while ($i<$totrighe) {
  print $pagina[$i];
